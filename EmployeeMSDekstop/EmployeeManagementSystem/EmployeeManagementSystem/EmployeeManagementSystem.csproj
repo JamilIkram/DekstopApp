@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BC9F415-B28A-41B2-B739-D53DB1515C22}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EmployeeManagementSystem</RootNamespace>
+    <AssemblyName>EmployeeManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data set\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementSystemDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementSystemDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Data set\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Data set\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data set\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet1.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet1.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet10.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet10.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet11.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet11.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet12.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet12.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet13.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet13.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet14.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet14.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet15.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet15.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet16.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet16.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet17.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet17.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet18.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet18.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet19.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet19.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet2.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet2.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet20.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet20.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet3.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet3.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet4.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet4.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet5.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet5.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet6.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet6.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet7.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet7.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet8.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet8.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet9.xsc">
+      <DependentUpon>EmployeeManagementSystemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementSystemDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementSystemDataSet9.xss">
+      <DependentUpon>EmployeeManagementSystemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
